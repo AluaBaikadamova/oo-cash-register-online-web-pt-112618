@@ -4,7 +4,8 @@ class CashRegister
   def initialize(discount=0)
    @discount=discount
     @total=0
-    @@all<<self
+ 
+
   end 
  
  def add_item (name, price,quantity=1)
@@ -12,7 +13,9 @@ class CashRegister
    @price=price
    @total+=price*quantity
    @quantity=quantity
-   
+      for counter in 1..quantity
+   @@all<<self.name
+end
  end
  
  def apply_discount
@@ -28,9 +31,7 @@ end
 def items
 
 
-for counter in 1..self.quantity
-   @@all<<self.name
-end
+
 return @@all
 end
  
