@@ -26,9 +26,11 @@ else
 end
 def items
 
-  for i=1 to @quantity
-  @@all<<@name
+
+for counter in 1..@quantity
+   @@all<<@name
 end
+
 end
  
   def void_last_transaction
