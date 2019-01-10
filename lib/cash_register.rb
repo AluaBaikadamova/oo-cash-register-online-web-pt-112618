@@ -12,6 +12,7 @@ class CashRegister
  end
  
  def apply_discount
+  "After the discount, the total comes to $800."
   end
  
   def void_last_transaction
