@@ -24,7 +24,7 @@ else
   return "There is no discount to apply."
   end
 end
-def items
+def self.items
 
 
 for counter in 1..@quantity
