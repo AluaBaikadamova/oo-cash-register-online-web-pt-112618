@@ -24,11 +24,11 @@ else
   return "There is no discount to apply."
   end
 end
-def self.items
+def items
 
 
-for counter in 1..@quantity
-   @@all<<@name
+for counter in 1..self.quantity
+   @@all<<self.name
 end
 return @@all
 end
