@@ -17,7 +17,7 @@ class CashRegister
    # @total+=price*quantity
    @total=@total-(@price*@discount*@quantity/100)
   n= @price*(1-@discount)
-  return "After the discount, the total comes to $#{@total.to_s.sub(/\.?0+$/, '')}."
+  return "After the discount, the total comes to $#{@total.to_s, '')}."
   end
  
   def void_last_transaction
