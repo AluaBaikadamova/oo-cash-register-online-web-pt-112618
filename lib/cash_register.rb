@@ -1,10 +1,10 @@
 class CashRegister
   attr_accessor :name, :price, :total, :discount, :quantity
-@@all=[]
+
   def initialize(discount=0)
    @discount=discount
     @total=0
- 
+ @@all=[]
 
   end 
  
@@ -13,7 +13,7 @@ class CashRegister
    @price=price
    @total+=price*quantity
    @quantity=quantity
-      for counter in 1..quantity
+     for counter in 1..quantity
    @@all<<self.name
 end
  end
@@ -30,7 +30,7 @@ else
 end
 def items
 
-
+ 
 
 return @@all
 end
