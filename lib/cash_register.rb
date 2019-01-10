@@ -28,7 +28,7 @@ def items
 
 
 for counter in 0..@quantity
-   @@all<<self.name
+   @@all<<@name
 end
 return @@all
 end
