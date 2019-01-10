@@ -1,6 +1,6 @@
 class CashRegister
   attr_accessor :name, :price, :total, :discount, :quantity
-@@all=[]
+
   def initialize(discount=0)
    @discount=discount
     @total=0
@@ -25,8 +25,10 @@ else
   end
 end
 def items
-  
-  return @@all
+  a=[]
+  for i=1 to @quantity
+  a<<
+end
 end
  
   def void_last_transaction
