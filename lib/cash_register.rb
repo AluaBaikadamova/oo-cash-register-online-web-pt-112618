@@ -30,6 +30,6 @@ def items
 end
  
   def void_last_transaction
-  @total=@total-(@price*(1-@discount)*@quantity/100)
+  @total=@total-(@price*(1-@discount/100)*@quantity)
   end
 end
