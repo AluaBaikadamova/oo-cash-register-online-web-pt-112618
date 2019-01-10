@@ -11,7 +11,7 @@ class CashRegister
    @price=price
    @total+=price*quantity
    @quantity=quantity
-   @@all<<self.name
+   
  end
  
  def apply_discount
