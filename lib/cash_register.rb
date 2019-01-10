@@ -27,7 +27,7 @@ end
 def items
 
 
-for counter in 0..@quantity
+for counter in 1..@quantity
    @@all<<@name
 end
 return @@all
