@@ -30,7 +30,7 @@ def items
 for counter in 1..@quantity
    @@all<<@name
 end
-
+return @@all
 end
  
   def void_last_transaction
