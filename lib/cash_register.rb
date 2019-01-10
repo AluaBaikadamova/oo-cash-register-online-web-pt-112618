@@ -25,9 +25,9 @@ else
   end
 end
 def items
-  a=[]
+
   for i=1 to @quantity
-  a<<
+  @@all<<@name
 end
 end
  
